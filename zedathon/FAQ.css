@@ -1,0 +1,15 @@
+.faq-answer {
+    display: none;
+    margin-top: 5px;
+  }
+  .faq-question {
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .faq-question:focus + .faq-answer,
+  .faq-question:hover + .faq-answer {
+    display: block;
+  }

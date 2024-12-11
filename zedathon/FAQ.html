@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - One-Stop Solution for All Your Service Needs</title>
+    <link rel="stylesheet" href="FAQ.css">
+    <style>
+        /* Style for the FAQ section */
+        .faq-section {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heading style */
+        .faq-section h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Style for individual FAQ items */
+        .faq {
+            margin-bottom: 15px;
+        }
+
+        /* Button style for the questions */
+        .faq-question {
+            width: 100%;
+            padding: 15px;
+            text-align: left;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for the question buttons */
+        .faq-question:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for the answer (initially hidden) */
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            background-color: #f1f1f1;
+            border-left: 4px solid #007BFF;
+            margin-top: 5px;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Styling the button on focus (optional) */
+        .faq-question:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq">
+            <button class="faq-question">What types of services are available on your platform?</button>
+            <div class="faq-answer">
+                <p>Our platform connects you with various service providers, including AC technicians, electricians, plumbers, mechanics, carpenters, cleaning services, pest control, home appliance repair, building painters, and more!</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">How do I book a service?</button>
+            <div class="faq-answer">
+                <p>Simply sign up on our platform, select the service you need, choose the service provider, and schedule a time that works for you. You'll receive a confirmation and reminders for your appointment.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">Are the service providers certified?</button>
+            <div class="faq-answer">
+                <p>Yes, all service providers on our platform are vetted for their expertise and certifications, ensuring that they provide professional and reliable services.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">How do I pay for the services?</button>
+            <div class="faq-answer">
+                <p>We offer secure online payment options through our platform. You can pay using credit cards, debit cards, or other online payment methods.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">Can I reschedule my service appointment?</button>
+            <div class="faq-answer">
+                <p>Yes, you can reschedule or cancel your service appointment directly through the platform before the scheduled time. Please refer to our cancellation policy for more details.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">Is there a customer support service?</button>
+            <div class="faq-answer">
+                <p>Yes, we provide 24/7 customer support. You can contact us through our platform via chat, email, or phone for any queries or issues.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">How can I trust the service providers on your platform?</button>
+            <div class="faq-answer">
+                <p>Our platform ensures that all service providers are reviewed and rated by previous customers, which helps maintain high-quality service standards. Additionally, we perform background checks to ensure their trustworthiness.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">What areas do you cover for these services?</button>
+            <div class="faq-answer">
+                <p>Our platform offers services across multiple regions. You can check availability in your area by entering your location on our website or app.</p>
+            </div>
+        </div>
+        
+        <div class="faq">
+            <button class="faq-question">How do I leave feedback about a service?</button>
+            <div class="faq-answer">
+                <p>After your service is completed, you will be prompted to leave a rating and review. Your feedback helps us improve the service experience for future users.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // JavaScript to toggle the display of the answers
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                // Toggle the visibility of the answer
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

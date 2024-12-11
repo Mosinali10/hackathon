@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <link rel="stylesheet" href="reviews.css"> <!-- Link to CSS -->
+</head>
+<body>
+    <div class="review-container">
+        <h3>Customer Reviews</h3>
+        <!-- Form to submit a review -->
+        <form id="review-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" min="1" max="5" step="1" required>
+
+            <label for="review">Your Review:</label>
+            <textarea id="review" required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <!-- Section to display reviews -->
+        <div id="reviews"></div>
+    </div>
+    <script src="frontend.js"></script> <!-- Link to JavaScript -->
+</body>
+</html>

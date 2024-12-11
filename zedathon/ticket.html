@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Ticket Form</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(120deg, #addaf4, #85cdfd);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: #ffffff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #444444;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #444444;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #65cbf6;
+      outline: none;
+      box-shadow: 0 0 4px rgba(101, 191, 246, 0.8);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(120deg, #388bc7, #a1cede);
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(120deg, #80d6f8, #41a6f8);
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    .attachment-label {
+      font-size: 14px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Submit a Ticket</h2>
+    <form id="ticketForm" method="POST" action="success.html">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required>
+      
+      <label for="issue">Issue Description:</label>
+      <textarea id="issue" name="issue" placeholder="Describe your issue here..." rows="4" required></textarea>
+      
+      <label class="attachment-label" for="attachment">
+        Attachment:
+        <span>(Optional)</span>
+      </label>
+      <input type="file" id="attachment" name="attachment">
+      
+      <button type="submit">Submit Ticket</button>
+    </form>
+  </div>
+</body>
+</html>

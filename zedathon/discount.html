@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discount Code Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #63aad6, #2f50a3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: #ffffff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .form-container label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #444444;
+    }
+
+    .form-container input[type="text"] {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(120deg, #2f50a3, #63aad6);
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .form-container button:hover {
+      background: linear-gradient(120deg, #63aad6, #2f50a3);
+    }
+
+    .form-container a {
+      display: block;
+      margin-top: 15px;
+      text-decoration: none;
+      font-size: 14px;
+      color: #011021;
+      transition: color 0.3s ease;
+    }
+
+    .form-container a:hover {
+      color: #00050a;
+    }
+
+    #discountResult {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #444444;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form id="discountForm">
+      <label for="discountCode">Enter Discount Code:</label>
+      <input type="text" id="discountCode" name="discountCode" placeholder="Enter your code">
+      <button type="submit">Apply</button>
+    </form>
+    <a href="C:\Users\ancha\OneDrive\Desktop\DiscTable.txt">View Discount Table</a>
+    <div id="discountResult"></div>
+  </div>
+  <script src="discount.js"></script>
+  <script src="discount2.js"></script>
+</body>
+</html>
